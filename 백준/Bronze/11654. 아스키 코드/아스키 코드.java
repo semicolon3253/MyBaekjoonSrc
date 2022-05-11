@@ -3,14 +3,12 @@ import java.io.*;
 public class Main {
 
     public static void main(String[] args) throws IOException {
-        BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
         BufferedWriter bw = new BufferedWriter(new OutputStreamWriter(System.out));
-        char input = br.readLine().toCharArray()[0];
+        int input = System.in.read();
 
-        bw.write(String.valueOf((int) input));
-        
+        bw.write(String.valueOf(input));
+
         bw.flush();
-        br.close();
         bw.close();
     }
 
